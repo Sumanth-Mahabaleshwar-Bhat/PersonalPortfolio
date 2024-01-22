@@ -30,4 +30,4 @@ CSS
 Feel free to contact me if you have any questions or collaboration ideas. Let's connect!
 
 Email: bhats3@mcmaster.ca
-LinkedIn: https://www.linkedin.com/in/sumanth-mahabaleshwar-bhat/)https://www.linkedin.com/in/sumanth-mahabaleshwar-bhat/
+LinkedIn: https://www.linkedin.com/in/sumanth-mahabaleshwar-bhat/
