@@ -1,0 +1,39 @@
+mat-list {
+    margin-top: 20px;
+}
+
+mat-list-item {
+    list-style-type: circle;
+    margin-bottom: 8px;
+}
+
+.example-box.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+  
+.example-chip .cdk-drop-list-dragging {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.expansion-headers .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-container, .skills-container, .experience-container, .education-container {
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined, .skills, .work {
+    margin-right: 8px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.summary {
+    justify-content: space-evenly;
+    font-size: 16px;
+}

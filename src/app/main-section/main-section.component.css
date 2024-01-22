@@ -1,0 +1,155 @@
+.main-section {
+    display: flex;
+    height: 100vh;
+}
+
+.section-2 {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    font-weight: bold;
+    color: #fff;
+}
+
+h2 {
+    font-weight: bold;
+    color: #000;
+}
+
+.contact-section {
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.icons a {
+    margin: 0 10px;
+    color: #000;
+    font-size: 24px;
+}
+
+.nav-link {
+    position: relative;
+    color: gray;
+    text-decoration: none;
+    padding-right: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    overflow: auto;
+}
+
+.home-section {
+    height: 100vh;
+    background-image: url('../../assets/homeBackground.png'); 
+    background-size: cover;
+    color: #fff;
+    opacity: 0.5; 
+}
+  
+.info-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.info-container h1 {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-container p {
+    font-size: 22px;
+    text-align: center;
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+.menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+}
+
+.menu-button.rotated {
+    transform: rotate(180deg);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.fade-in-header {
+    opacity: 0;
+    animation: fadeInHeader 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInHeader  {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-paragraph {
+    opacity: 0;
+    animation: slideInParagraph 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes slideInParagraph {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.side-nav-container {
+    width: 250px;
+    background-color: #f0f0f0;
+}
+
+.menu-item-container {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.menu-item {
+    margin-left: 8px;
+    margin-top: 4px;
+    vertical-align: middle;
+    font-size: large;
+}
+
+mat-icon {
+    vertical-align: middle;
+}
