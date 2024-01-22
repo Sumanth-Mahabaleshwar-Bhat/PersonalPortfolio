@@ -1,7 +1,9 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { MatSidenav } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-main-section',
@@ -19,7 +21,10 @@ import { Router } from '@angular/router';
 })
 
 export class MainSectionComponent implements OnInit {
-  constructor(private router: Router) {
+  @ViewChild(MatSidenav)
+  sidenav!: MatSidenav;
+
+  constructor(private router: Router, private observer: BreakpointObserver) {
 
   }
 
@@ -29,6 +34,18 @@ export class MainSectionComponent implements OnInit {
     setTimeout(() => {
       this.fadeInState = 'show';
     }, 500);
+  }
+
+  ngAfterViewInit() {
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+      if(res.matches) {
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+      } else {
+        this.sidenav.mode = 'side';
+        this.sidenav.open();
+      }
+    });
   }
 
   isRouteActive(route:string): boolean {

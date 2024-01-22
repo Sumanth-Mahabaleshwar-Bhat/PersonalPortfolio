@@ -7,6 +7,13 @@ img {
     object-fit: cover;
 }
 
+mat-card {
+    margin-left: 32px;
+    margin-bottom: 5px;
+    padding: 16px;
+    overflow: auto;
+}
+
 mat-card-content {
     text-align: justify;
     text-justify: inter-word;
@@ -18,4 +25,11 @@ p, li {
 
 mat-card-subtitle {
     font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    mat-card {
+      width: 90%;
+      margin: 15px;
+    }
 }

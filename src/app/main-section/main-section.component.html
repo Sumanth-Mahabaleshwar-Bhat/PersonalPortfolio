@@ -1,59 +1,63 @@
-<div class="main-section">
-    <mat-sidenav-container class="side-nav-container">
-        <mat-sidenav #sidenav mode="side" opened="isExpanded">
-            <mat-nav-list>
-                <mat-list-item>
-                    <mat-icon mat-list-icon class="menu-button">menu</mat-icon>
-                </mat-list-item>
+<mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+        <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+</mat-toolbar>
 
-                <mat-list-item routerLink="/" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/')}">
-                    <div class="menu-item-container">
-                        <mat-icon mat-list-icon>home</mat-icon>
-                        <span class="menu-item">Home</span>
-                    </div>
-                </mat-list-item>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+        <mat-nav-list>
+            <mat-list-item>
+                <mat-icon mat-list-icon class="menu-button">menu</mat-icon>
+            </mat-list-item>
 
-                <mat-list-item routerLink="/about" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/about')}">
-                    <div class="menu-item-container">
-                        <mat-icon mat-list-icon>person</mat-icon>
-                        <span class="menu-item">About</span>
-                    </div>
-                </mat-list-item>
-
-                <mat-list-item routerLink="/projects" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/projects')}">
-                    <div class="menu-item-container">
-                        <mat-icon mat-list-icon>code</mat-icon>
-                        <span class="menu-item">Projects</span>
-                    </div>
-                </mat-list-item>
-
-                <mat-list-item routerLink="/resume" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/resume')}" (click)="onResumeButtonClick()">
-                    <div class="menu-item-container">
-                        <mat-icon mat-list-icon>description</mat-icon>
-                        <span class="menu-item">Resume</span>
-                    </div>
-                </mat-list-item>
-            </mat-nav-list>
-
-            <div class="contact-section">
-                <h2>CONNECT WITH ME ON</h2>
-                <div class="icons">
-                    <a href="mailto:sumanthmbhat123@gmail.com" target="_blank">
-                        <mat-icon class="mdi mdi-email"></mat-icon>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sumanth-mahabaleshwar-bhat/" target="_blank">
-                        <mat-icon class="mdi mdi-linkedin"></mat-icon>
-                    </a>
-                    <a href="https://github.com/Sumanth-Mahabaleshwar-Bhat" target="_blank">
-                        <mat-icon class="mdi mdi-github"></mat-icon>
-                    </a>
+            <mat-list-item routerLink="/" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/')}">
+                <div class="menu-item-container">
+                    <mat-icon mat-list-icon>home</mat-icon>
+                    <span class="menu-item">Home</span>
                 </div>
-            </div>
-        </mat-sidenav>
-    </mat-sidenav-container>
+            </mat-list-item>
 
-    <div class="section-2" *ngIf="isRouteActive('/')">
-        <div class="home-section" [@fadeIn]="fadeInState">
+            <mat-list-item routerLink="/about" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/about')}">
+                <div class="menu-item-container">
+                    <mat-icon mat-list-icon>person</mat-icon>
+                    <span class="menu-item">About</span>
+                </div>
+            </mat-list-item>
+
+            <mat-list-item routerLink="/projects" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/projects')}">
+                <div class="menu-item-container">
+                    <mat-icon mat-list-icon>code</mat-icon>
+                    <span class="menu-item">Projects</span>
+                </div>
+            </mat-list-item>
+
+            <mat-list-item routerLink="/resume" routerLinkActive="active-link" class="nav-link" [ngClass]="{'highlighted': isRouteActive('/resume')}" (click)="onResumeButtonClick()">
+                <div class="menu-item-container">
+                    <mat-icon mat-list-icon>description</mat-icon>
+                    <span class="menu-item">Resume</span>
+                </div>
+            </mat-list-item>
+        </mat-nav-list>
+
+        <div fxLayout="row" fxLayout.xs="column" class="content-container" class="contact-section">
+            <h2>CONNECT WITH ME ON</h2>
+            <div class="icons">
+                <a href="mailto:sumanthmbhat123@gmail.com" target="_blank">
+                    <mat-icon class="mdi mdi-email"></mat-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/sumanth-mahabaleshwar-bhat/" target="_blank">
+                    <mat-icon class="mdi mdi-linkedin"></mat-icon>
+                </a>
+                <a href="https://github.com/Sumanth-Mahabaleshwar-Bhat" target="_blank">
+                    <mat-icon class="mdi mdi-github"></mat-icon>
+                </a>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="home-section" [@fadeIn]="fadeInState" *ngIf="isRouteActive('/')">
             <div class="info-container">
                 <h1 class="fade-in-header">Hello, I am Sumanth Mahabaleshwar Bhat</h1>
                 <p class="slide-in-paragraph">A dynamic Full Stack Software Developer and recent Electrical & Computer Engineering Master’s graduate from McMaster University. With over 2 years of hands-on experience in the IT field, I bring a perfect blend of technical expertise and a passion for crafting innovative solutions.</p>
@@ -61,18 +65,18 @@
                 <p class="slide-in-paragraph">Check out my Portfolio to know more about me!</p>
             </div>
         </div>
-    </div>
 
-    <div class="section-2" *ngIf="isRouteActive('/about')">
-        <app-about></app-about>
-    </div>
-
-    <div class="section-2" *ngIf="isRouteActive('/resume')">
-        <app-resume></app-resume>
-    </div>
-    
-    <div class="section-2" *ngIf="isRouteActive('/projects')">
-        <app-projects></app-projects>
-    </div> 
-</div>
-
+        <div fxLayout="row" fxLayout.xs="column" *ngIf="isRouteActive('/about')">
+            <app-about></app-about>
+        </div>
+        
+        <div fxLayout="row" fxLayout.xs="column" *ngIf="isRouteActive('/resume')">
+            <app-resume></app-resume>
+        </div>
+        
+        <div fxLayout="row" fxLayout.xs="column" *ngIf="isRouteActive('/projects')">
+            <app-projects></app-projects>
+        </div> 
+        
+    </mat-sidenav-content>
+</mat-sidenav-container>

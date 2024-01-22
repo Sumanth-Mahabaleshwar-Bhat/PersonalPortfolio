@@ -16,3 +16,22 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
+
+.projects {
+    margin: 16px;
+    margin-left: 32px;
+    padding: 16px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+    mat-card {
+      width: 90%;
+    }
+}
+
+h1 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 32px;
+}
