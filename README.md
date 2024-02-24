@@ -15,7 +15,7 @@ This portfolio is built using Angular Material, showcasing my skills, projects, 
 #  How to View
 To explore my portfolio, simply visit https://main--fastidious-chimera-acc173.netlify.app/ and navigate through the sections. You can also clone this repository and run it locally.
 
-- git clone [[Your Repository URL]](https://github.com/Sumanth-Mahabaleshwar-Bhat/PersonalPortfolio.git)
+- git clone https://github.com/Sumanth-Mahabaleshwar-Bhat/PersonalPortfolio.git
 - cd [Your Repository Directory]
 - ng serve
 - Open your browser and go to http://localhost:4200/ to see the portfolio in action.
