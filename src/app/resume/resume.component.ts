@@ -59,10 +59,10 @@ export class ResumeComponent {
   
   skills: Skills[] = [
     {name: 'Python'},
-    {name: 'Java'},
-    {name: 'JavaScript'},
     {name: 'C#'},
+    {name: 'JavaScript'},
     {name: 'C++'},
+    {name: 'Java'},
   ];
 
   frontEndSkills: FrontEndSkills[] = [
@@ -71,29 +71,33 @@ export class ResumeComponent {
     {name: 'Bootstrap'},
     {name: 'TypeScript'},
     {name: 'Angular Material'},
-    {name: 'Angular Forms'},
+    {name: 'XML'},
     {name: 'JSON'}
   ];
 
   backEndSkills: BackEndSkills[] = [
-    {name: '.NET 6.0 Entity Core Framework'},
+    {name: 'ASP.NET Entity Core Framework'},
     {name: 'LINQ'},
-    {name: 'RESTful Services'},
+    {name: 'RESTful API'},
     {name: 'Ruby on Rails'}
   ];
 
   dbSkills: dbSkills[] = [
     {name: 'Microsoft SQL Server'},
     {name: 'Firebase'},
-    {name: 'PostgreSQL'}
+    {name: 'PostgreSQL'},
+    {name: 'MongoDB'}
   ];
 
   mobDevSkills: mobDevSkills[] = [
     {name: 'Flutter'},
+    {name: 'Dart'},
     {name: 'MIT App Inventor'}
   ];
 
   automationSkills: automationSkills[] = [
+    {name: 'UI Automation Testing'},
+    {name: 'Unit Automation Testing'},
     {name: 'Selenium'},
     {name: 'TestCafe framework'}
   ];
@@ -101,6 +105,15 @@ export class ResumeComponent {
   otherSkills: otherSkills[] = [
     {name: 'GitHub'},
     {name: 'Agile Development'},
+    {name: 'Software Development Life Cycle (SDLC)'},
+    {name: 'CI/CD'},
+    {name: 'Database Design'},
+    {name: 'Software Architecture'},
+    {name: 'UI/UX'},
+    {name: 'Object-Oriented Programming'},
+    {name: 'Splunk'},
+    {name: 'Cloud computing'},
+    {name: 'Microservices'},
     {name: 'JIRA'},
     {name: 'Azure DevOps'},
     {name: 'Microsoft Power Automate'},
