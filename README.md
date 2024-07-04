@@ -31,7 +31,7 @@ To explore my portfolio, simply visit https://main--fastidious-chimera-acc173.ne
 # Contact
 Feel free to contact me if you have any questions or collaboration ideas. Let's connect!
 
-- Email: bhats3@mcmaster.ca
+- Email: sumanthmbhat123@gmail.com
 - LinkedIn: https://www.linkedin.com/in/sumanth-mahabaleshwar-bhat/
 
 ![image](https://github.com/Sumanth-Mahabaleshwar-Bhat/PersonalPortfolio/assets/120843537/620c0133-ba4c-4b19-aad2-88655fa9db3b)
